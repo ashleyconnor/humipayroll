@@ -10,18 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_16_152529) do
-
-  create_table "people", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.date "date_of_birth"
-    t.string "marital_status"
-    t.string "social_insurance_number"
-    t.date "hire_date"
-    t.text "preferences"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+ActiveRecord::Schema.define(version: 20_180_616_152_529) do
+  create_table 'people', force: :cascade do |t|
+    t.string 'first_name'
+    t.string 'last_name'
+    t.date 'date_of_birth'
+    t.string 'marital_status'
+    t.string 'social_insurance_number'
+    t.date 'hire_date'
+    t.text 'preferences'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
-
 end
