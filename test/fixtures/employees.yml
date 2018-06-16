@@ -1,0 +1,11 @@
+DEFAULTS: &DEFAULTS
+  first_name: James
+  last_name: Doe
+  date_of_birth: <%= 19.years.ago.to_date.to_s(:db) %>
+  marital_status: single
+  social_insurance_number: 123-456-789
+  hire_date: <%= 1.month.ago.to_date.to_s(:db) %>
+  preferences: "Unknown"
+
+valid_employee:
+  <<: *DEFAULTS
